@@ -29,3 +29,11 @@ SELECT ime, count(*) AS Broj FROM zaposlenici GROUP BY ime;
 SELECT * FROM zaposlenici ORDER BY ime;
 SELECT * FROM zaposlenici ORDER BY ime DESC;
 SELECT * FROM zaposlenici ORDER BY ime, prezime;
+
+-- vrati samo 2 zapisa
+SELECT * FROM zaposlenici LIMIT 2;
+-- kreni od zapisa 2 i vrati 3 zapisa
+SELECT * FROM zaposlenici LIMIT 2,3;
+
+SELECT ime FROM grad WHERE NOT ime = 'Split'; -- <> !=
+SELECT ime FROM grad WHERE ime != 'Split'; -- <> !=
